@@ -1,0 +1,1302 @@
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1892 Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+ERROR app.py:1976 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 10:09:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR app.py:1892 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+ERROR app.py:1976 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 10:09:46] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1892 Exception on /api/v1.0/login [GET]
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+ERROR app.py:1976 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 10:09:53] "[35m[1mGET /api/v1.0/login HTTP/1.1[0m" 500 -
+ERROR app.py:1892 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+ERROR app.py:1976 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 10:09:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1892 Exception on /api/v1.0/ [GET]
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+ERROR app.py:1976 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 10:09:57] "[35m[1mGET /api/v1.0/ HTTP/1.1[0m" 500 -
+ERROR app.py:1892 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+ERROR app.py:1976 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 559, in connect
+    sock = self._connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 615, in _connect
+    raise err
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 1970, in finalize_request
+    response = self.process_response(response)
+  File "D:\envs\my_flask\lib\site-packages\flask\app.py", line 2269, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\envs\my_flask\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 1822, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "D:\envs\my_flask\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "D:\envs\my_flask\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£.
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 10:09:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 10:10:16] "[37mGET /api/v1.0/ HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 10:10:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:31] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:38] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:46:39] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:47:27] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:47:27] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:47:27] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:56:53] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:56:54] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 16:56:54] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 18:54:53] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 18:54:54] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 18:54:54] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 18:54:56] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 18:54:56] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 19:14:47] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 19:14:47] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 19:14:47] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 19:15:41] "[33mGET /api/v1.0/login HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 19:15:48] "[33mGET /api/v1.0/register HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [17/Nov/2020 19:16:02] "[33mGET /api/v1.0/users HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET / HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/css/ihome/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/css/ihome/index.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/js/template.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/js/ihome/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/images/logo@128x59.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/images/home01.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/images/home02.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/images/home03.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[36mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:53] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:53] "[36mGET /static/css/ihome/register.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:53] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:53] "[37mGET /api/v1.0/image_codes/ae5529a7-18c7-45a2-a6af-ac1e915cfaf2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:54] "[37mGET /api/v1.0/image_codes/5be99b1a-42e1-4fec-aa14-8ceb13b3cbfe HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:08:55] "[37mGET /api/v1.0/image_codes/a145c16b-1eb7-4244-9d2f-b3b5736a659b HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 14:09:09] "[33mGET /api/smscode?mobile=18634819061&code=hpuc&codeId=a145c16b-1eb7-4244-9d2f-b3b5736a659b HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:10] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:10] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[33mGET /static/images/landlord01.jgp HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:46] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:14:48] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /detail.html?id=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/css/ihome/detail.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/js/ihome/detail.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/images/landlord01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/images/houseicon_sprite.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:06] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 15:15:08] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\__init__.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 16:52:57] "[37mGET /api/v1.0/image_codes/bf2506cb-1da3-4149-8f7e-bfc5fcbcbe4a HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 16:53:08] "[33mGET /api/smscode?mobile=18634819061&code=f3ye&codeId=bf2506cb-1da3-4149-8f7e-bfc5fcbcbe4a HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:15:20] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:15:20] "[36mGET /static/css/ihome/login.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:15:20] "[36mGET /static/js/ihome/login.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:15:38] "[31m[1mPUT /api/v1.0/login HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:16:04] "[31m[1mPUT /api/v1.0/sessions HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:17:16] "[31m[1mPUT /api/v1.0/sessions HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:17:17] "[31m[1mPUT /api/v1.0/sessions HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:17:32] "[31m[1mPUT /api/v1.0/sessions HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:17:40] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:18:36] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:18:38] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:19:46] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:19:46] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:19:48] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:19:59] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:19:59] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:23:49] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:24:02] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:24:33] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:25:52] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:25:52] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:26:49] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:26:53] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:30:06] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:30:11] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:30:42] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:30:43] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:30:56] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:32:59] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:36:03] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:36:17] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:36:28] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:36:31] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:36:35] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:36:36] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:36:38] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:36:42] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 17:38:47] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:43:31] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:44:04] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR passport.py:30 decoding to str: need a bytes-like object, NoneType found
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:44:41] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:44:59] "[37mGET /api/v1.0/image_codes/233a1496-1107-4326-8d42-9b52364c546a HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:45:18] "[37mGET /api/v1.0/image_codes/525a3ff5-a118-4a9c-b2a5-9d620a7bff2f HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:45:25] "[33mGET /api/smscode?mobile=18634819061&code=z8ug&codeId=525a3ff5-a118-4a9c-b2a5-9d620a7bff2f HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:45:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:46:55] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:47:08] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:48:31] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:48:34] "[33mGET /api/v1.0/sessions HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:48:38] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:48:39] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:50:26] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:57:32] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:57:32] "[37mGET /api/v1.0/image_codes/5ce04c45-ac27-4382-b294-504a6e1f7439 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:57:32] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 19:57:32] "[33mGET /api/v1.0/sessions HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [18/Nov/2020 20:02:39] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:40] "[37mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:40] "[37mGET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:40] "[37mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:40] "[37mGET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:40] "[37mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:40] "[37mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/css/ihome/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/css/ihome/index.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/js/template.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/js/ihome/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/images/logo@128x59.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/images/home02.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/images/home03.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/images/home01.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[36mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:34:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:35:03] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:35:03] "[36mGET /static/css/ihome/register.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:35:03] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:35:03] "[37mGET /api/v1.0/image_codes/2c44688c-7c1b-492b-a292-edf7ff00eb9f HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:35:16] "[35m[1mGET /api/v1.0/sms_codes/18634819061?image_code=qxba&image_code_id=2c44688c-7c1b-492b-a292-edf7ff00eb9f HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:35:49] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:35:49] "[37mGET /api/v1.0/image_codes/69b9a696-f198-44f3-8f53-0cb21f6c2440 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:35:57] "[37mGET /api/v1.0/image_codes/89337d29-746f-4ec6-b335-b8c230495b66 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:35:58] "[37mGET /api/v1.0/image_codes/3c889ad3-299d-4a01-9703-b90632ecdb07 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:36:09] "[37mGET /api/v1.0/sms_codes/18634819061?image_code=wuse&image_code_id=3c889ad3-299d-4a01-9703-b90632ecdb07 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:160 decoding to str: need a bytes-like object, NoneType found
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:36:11] "[37mGET /api/v1.0/sms_codes/18634819061?image_code=wuse&image_code_id=3c889ad3-299d-4a01-9703-b90632ecdb07 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:160 decoding to str: need a bytes-like object, NoneType found
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:36:16] "[37mGET /api/v1.0/sms_codes/18634819061?image_code=wuse&image_code_id=3c889ad3-299d-4a01-9703-b90632ecdb07 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:160 decoding to str: need a bytes-like object, NoneType found
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:37:47] "[37mGET /api/v1.0/sms_codes/18634819061?image_code=wuse&image_code_id=3c889ad3-299d-4a01-9703-b90632ecdb07 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:38:44] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:38:44] "[37mGET /api/v1.0/image_codes/bba36336-bafc-4b2c-86a1-8c620f35a855 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:38:56] "[35m[1mGET /api/v1.0/sms_codes/18634819061?image_code=vbxr&image_code_id=bba36336-bafc-4b2c-86a1-8c620f35a855 HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:54:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:54:20] "[37mGET /api/v1.0/image_codes/ad036175-9618-4074-af06-416d1f631bc4 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 08:54:34] "[35m[1mGET /api/v1.0/sms_codes/18634819061?image_code=chg9&image_code_id=ad036175-9618-4074-af06-416d1f631bc4 HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\__init__.py', reloading
+INFO _internal.py:113  * Restarting with stat
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 14:02:41] "[37mGET /api/v1.0/image_codes/56dcce4d-7e86-4749-bcbb-0c8eab8d3571 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 14:02:46] "[37mGET /api/v1.0/image_codes/ae087624-592f-4ca0-90d8-21a2a3a3d893 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 14:02:55] "[35m[1mGET /api/v1.0/sms_codes/18634819061?image_code=ilfa&image_code_id=ae087624-592f-4ca0-90d8-21a2a3a3d893 HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 14:03:07] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 14:03:18] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 14:03:39] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 14:09:50] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\profile.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\profile.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\profile.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:34:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:34:44] "[37mGET /api/v1.0/image_codes/cb31bfb5-633a-4007-ba33-6f4499127620 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:34:51] "[37mGET /api/v1.0/image_codes/0ae6a390-6b81-47d1-b4cf-d991dcf1af20 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:34:52] "[37mGET /api/v1.0/image_codes/4248f0b9-37a8-4cde-94f7-730d1e27765b HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:34:58] "[37mGET /api/v1.0/sms_codes/18634819061?image_code=rffm&image_code_id=4248f0b9-37a8-4cde-94f7-730d1e27765b HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:35:15] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:35:54] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:40:46] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:41:02] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:41:20] "[37mGET /api/v1.0/image_codes/6383e311-bea5-4fec-b432-5d7a6dbb18f4 HTTP/1.1[0m" 200 -
+ERROR passport.py:30 decoding to str: need a bytes-like object, NoneType found
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:42:23] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+ERROR passport.py:30 decoding to str: need a bytes-like object, NoneType found
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:42:23] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:42:26] "[37mGET /api/v1.0/sms_codes/18634819061?image_code=rffm&image_code_id=6383e311-bea5-4fec-b432-5d7a6dbb18f4 HTTP/1.1[0m" 200 -
+ERROR verify_code.py:160 decoding to str: need a bytes-like object, NoneType found
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:42:35] "[37mGET /api/v1.0/sms_codes/18634819061?image_code=kpkc&image_code_id=6383e311-bea5-4fec-b432-5d7a6dbb18f4 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:43:56] "[37mGET /api/v1.0/image_codes/bb28ae5e-ea6e-4863-b33f-7b173e6c0bba HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:44:14] "[37mGET /api/v1.0/sms_codes/18634819061?image_code=uusc&image_code_id=bb28ae5e-ea6e-4863-b33f-7b173e6c0bba HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:44:29] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:44:34] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:44:40] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:44:55] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:16] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:33] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:34] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:41] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:45:51] "[31m[1mPOST /api/v1.0/sess HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:46:01] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:46:05] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:46:06] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:47:40] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:47:40] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:47:47] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:47:48] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:50:47] "[37mPOST /api/v1.0/users/avatar HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\profile.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:51:09] "[37mPOST /api/v1.0/users/avatar HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 15:51:10] "[37mPOST /api/v1.0/users/avatar HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 16:56:56] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:03:17] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:03:17] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:03:17] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:03:24] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:04:54] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:05:03] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:05:10] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:07:40] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:07:48] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:22] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:22] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:22] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:22] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:22] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:22] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:22] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:22] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:23] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:24] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:24] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:24] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:08:31] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:11:05] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:11:06] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:11:13] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:16:18] "[35m[1mPOST /api/v1.0/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:16:31] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:16:35] "[33mGET /api/v1.0/sessions HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 17:16:46] "[33mGET /api/v1.0/sessions HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:26:39] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Detected change in 'D:\\ÊµÑµ2\\home\\ihome\\api_1_0\\passport.py', reloading
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /api/v1.0/image_codes/014c32b4-dec3-421d-8fe9-57408dcd5f79 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:27:50] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:28:06] "[37mGET /api/v1.0/sms_codes/18634819051?image_code=nhc7&image_code_id=014c32b4-dec3-421d-8fe9-57408dcd5f79 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:28:19] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:28:26] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:29:51] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /api/v1.0/image_codes/0872c79b-21de-4150-8861-d7c28f9d554b HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /api/v1.0/image_codes/c6dd1075-b079-4416-9189-5224cbbc629f HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:09] "[37mGET /api/v1.0/image_codes/a8e9bd76-94c5-4983-87bd-9ba664f74322 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:22] "[37mGET /api/v1.0/sms_codes/18634819051?image_code=qfcy&image_code_id=a8e9bd76-94c5-4983-87bd-9ba664f74322 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mPOST /api/v1.0/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:32] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:35] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:30:44] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:19] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:19] "[36mGET /login.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:26] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Restarting with stat
+WARNING _internal.py:113  * Debugger is active!
+INFO _internal.py:113  * Debugger PIN: 334-228-186
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:35:59] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:00] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:00] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:00] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:06] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:06] "[37mGET /search.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:06] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:06] "[33mGET /static/images/landlord01.jgp HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:06] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:22] "[37mPOST /api/v1.0/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:36:22] "[33mGET /static/images/landlord01.jgp HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:38:39] "[36mGET /search.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:38:39] "[33mGET /static/images/landlord01.jgp HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:38:42] "[37mGET /auth.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:38:42] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:38:42] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:38:42] "[37mGET /static/js/ihome/auth.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:38:56] "[37mGET /booking.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:38:56] "[37mGET /static/css/ihome/booking.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:38:56] "[37mGET /static/js/ihome/booking.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:04] "[37mGET /detail.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:04] "[37mGET /static/css/ihome/detail.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:04] "[37mGET /static/js/ihome/detail.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:04] "[37mGET /static/images/landlord01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:04] "[37mGET /static/images/houseicon_sprite.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:16] "[37mGET /lorders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:16] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:16] "[33mGET /%7B%7Border.img_url%7D%7D HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:16] "[37mGET /static/js/ihome/lorders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:22] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:22] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:22] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:33] "[37mGET /myhouse.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:33] "[37mGET /static/css/ihome/myhouse.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:33] "[37mGET /static/js/ihome/myhouse.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:43] "[37mGET /newhouse.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:43] "[37mGET /static/css/ihome/newhouse.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:43] "[37mGET /static/js/ihome/newhouse.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:49] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:39:49] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:40:00] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:40:00] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [19/Nov/2020 19:40:06] "[33mGET /static/images/landlord01.jgp HTTP/1.1[0m" 404 -
